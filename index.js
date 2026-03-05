@@ -3,10 +3,10 @@ const submit=document.querySelector("#add");
 
 //POST API
 submit.addEventListener('click',()=>{
-    let fname=document.querySelector("#fname").value;
-    let lname=document.querySelector("#lname").value;
-    let email=document.querySelector("#email").value;
-    let gender=document.querySelector("#gender").value;
+    let itemName=document.querySelector("#itemName").value;
+    let unitPrice=document.querySelector("#unitPrice").value;
+    let quantity=document.querySelector("#quantity").value;
+    let supplier=document.querySelector("#supplier").value;
     let formData={fname,lname,email,gender};
 
     fetch("http://localhost:7000/api/users",{
@@ -48,3 +48,4 @@ function getUsers(){
     })
 
 }
+
